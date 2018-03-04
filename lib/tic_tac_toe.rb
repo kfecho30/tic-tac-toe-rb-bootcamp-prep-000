@@ -57,6 +57,8 @@ def play(board)
     elsif winner(board) != nil
       puts "Congraulations #{winner(board)}!"
     end
+  else
+    turn(board)
   end
 end
 
