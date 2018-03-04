@@ -52,6 +52,7 @@ end
 def play(board)
   if winner(board) != nil
     puts "Congraulations #{winner(board)}!"
+  end
 end
 
 WIN_COMBINATIONS = [
