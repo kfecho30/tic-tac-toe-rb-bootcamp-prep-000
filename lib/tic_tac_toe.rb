@@ -50,11 +50,8 @@ def current_player(board)
 end
 
 def play(board)
-  counter = 0
-  while counter < 9
-    turn(board)
-    counter += 1
-  end
+  if winner(board) != nil
+    puts "Congraulations #{winner(board)}!"
 end
 
 WIN_COMBINATIONS = [
