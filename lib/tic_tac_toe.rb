@@ -50,6 +50,7 @@ def current_player(board)
 end
 
 def play(board)
+  input = gets
   if draw?(board)
     puts "Cat's Game!"
   elsif winner(board) != nil
