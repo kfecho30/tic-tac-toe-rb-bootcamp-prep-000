@@ -50,7 +50,9 @@ def current_player(board)
 end
 
 def play(board)
-  if winner(board) != nil
+  if draw?(board)
+    puts "Cat's Game!"
+  elsif winner(board) != nil
     puts "Congraulations #{winner(board)}!"
   end
 end
